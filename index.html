@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BootCamper Survey Form</title>
+      <link href="styles.css" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/3006c27018.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">BootCamper Survey Form</h1>
+      <p id="description">"A Survey for Starter & Tips Seeker"</p>
+    </header>
+    <hr class="line">
+    <main>
+      <form id="survey-form">
+        <label id="name-label">Username: <input id="name" type="text" pattern="[A-Za-z]{4,}" placeholder="Input your Username" required/></label>
+        <label id="number-label">Coding Experience (optional): <input id="number" type="number" min="0" max="100" placeholder="Input your total experience"/></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Input your Email" required/></label>
+        <label>Best Programming Language: 
+          <select id="dropdown">
+            <option disabled selected class="opt-selected">Select an option</option>
+            <option>Javascript</option>
+            <option>Python</option>
+            <option>Ruby</option>
+            <option>C++</option>
+            <option>Others</option>
+          </select>
+        </label>
+        <p class="text-radio">Do you recommend coding to everyone?</p>
+        <label><input name="recommendation" type="radio" value="YES"/> Yes</label>
+        <label><input name="recommendation" type="radio" value="NO"/> No</label>
+        <label><input name="recommendation" type="radio" value=":v"/> I'm not sure</label>
+        <p class="text-checkbox">What do you think a beginner should start with?</p>
+        <label><input type="checkbox" value="1"/> Learning how to use a Terminal.</label>
+        <label><input type="checkbox" value="2"/> Leetcode.</label>
+        <label><input type="checkbox" value="3"/> More projects.</label>
+        <label><input type="checkbox" value="4"/> Watching Youtube tutorials.</label>
+        <label><input type="checkbox" value="5"/> Participate in a open source projects.</label>
+        <label>Any additional tips to be shared?
+          <textarea name="comment" placeholder="Make coding a part of your life..." rows="5" cols="50"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit"/>
+        </form>
+      </main>
+      <footer>
+        <p id="footer-text"><i class="fa-solid fa-envelope-open"></i> @Excardical 2022 <i class="fa-solid fa-envelope-open"></i></p>
+      </footer>
+  </body>
+</html>
