@@ -114,12 +114,12 @@ label {
   background: #37af65;
   cursor: pointer;
   border-color: #37af65;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 #submit:hover {
-  background-color: violet;
-  border-color: violet;
+  background-color: green;
+  border-color: green;
 }
 
 input[type=radio] { 
@@ -127,13 +127,25 @@ input[type=radio] {
   width: 25px;
   height: 18px;
   cursor: pointer;
+  transition: 0.5s;
+  accent-color: #5f0a87;
+}
+
+input[type=radio] {
+  accent-color: #864ba2;
 }
 
 input[type=checkbox] {
   box-shadow: none;
   cursor: pointer;
   width: 25px;
+  transition: 0.5s;
   height: 18px;
+  accent-color: #5f0a87;
+}
+
+input[type=checkbox]:hover {
+  accent-color: #864ba2;
 }
 
 #dropdown {
@@ -189,3 +201,23 @@ footer {
 #footer-text {
   font-weight: 700;
 }
+
+/* Media Screen Change */
+
+@media (max-width: 600px) {
+  #name, #number, #email, #dropdown, textarea {
+    display: block;
+    width: 70%;
+    height: 25px;
+    margin: 7px 0px 7px 10px;
+    align-items: flex-start;
+  }
+
+  #submit {
+    width: 80%;
+    margin: 25px 0px 15px 30px;
+    align-items: flex-start;
+  }
+}
+
+
